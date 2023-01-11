@@ -1,0 +1,1 @@
+# multipication-table-github.io![screencapture-file-C-Users-Nisha-Desktop-retailware-task-table-html-2023-01-11-10_34_34](https://user-images.githubusercontent.com/114923297/211757697-830535e4-d574-481b-8ccb-265cca7de332.png)
