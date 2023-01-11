@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+
+        border: 1px solid black;
+        height: 100vh;
+        width: 100vw;
+        background-color: aqua;
+    }
+
+    .inner {
+
+        border: 1px solid black;
+        height: 450px;
+        width: 300px;
+        margin: auto;
+        border-radius: 10px;
+        background-color: rgb(164, 121, 229);
+        box-shadow: 0 10px 20px black;
+
+    }
+
+    label {
+
+        font-size: 1.5rem;
+        margin-left: 65px;
+
+    }
+
+    input {
+
+        margin-top: 10px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    #btn {
+
+        width: 150px;
+        margin-left: 70px;
+        font-size: 1.5rem;
+        background-color: blue;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    #result {
+
+        margin-left: 130px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="inner">
+            <form>
+                <label for="table">Table Number</label><br>
+                <input type="text" name="number" id="number" placeholder="Enter number"><br><br>
+
+                <div id="result">
+                </div>
+
+                <input type="button" value="Show Table" onclick="table()" id="btn">
+                <input type="button" value="Delete Table" onclick="clr()" id="btn">
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+
+        function table() {
+            document.getElementById("result").innerHTML = " ";
+            var num = document.getElementById("number").value;
+
+            if (num == undefined || num == "") {
+
+                alert("Enter first table no")
+
+                
+            }
+
+
+            var i = 1;
+
+            for (i = 1; i <= 10; i++)
+             {
+
+                result = num * i;
+
+                document.getElementById("result").innerHTML += result + "<br>";
+
+
+
+            }
+
+
+        }
+
+        function clr() {
+
+            document.getElementById("result").innerHTML = " ";
+            document.getElementById("number").value = " ";
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
